@@ -8,3 +8,4 @@ const GenreSchema = new Schema({
 });
 
 export default mongoose.model('Genre', GenreSchema);
+
