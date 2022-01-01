@@ -14,6 +14,7 @@ router.get('/', asyncHandler(async (req, res) => {
     res.status(200).json(shows);
 }));
 
+
 router.get('/:id', asyncHandler(async (req, res) => {
     const id = parseInt(req.params.id);
     const show = await getShow(id);

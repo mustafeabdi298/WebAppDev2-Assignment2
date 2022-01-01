@@ -18,6 +18,9 @@ router.get("/shows", async (req, res) => {
 });
 
 
+
+
+
 //Add a review
 router.post("/", asyncHandler( async (req, res, next) => {
     if(!req.body.authorName || !req.body.text || !req.body.rating || !req.body.movieId){
