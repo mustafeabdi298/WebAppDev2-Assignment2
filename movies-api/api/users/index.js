@@ -36,6 +36,7 @@ router.post('/',asyncHandler( async (req, res, next) => {
         user.comparePassword(req.body.password, (err, isMatch) => {
           if (isMatch && !err) {
             // if user is found and password matches, create a token
+            // eslint-disable-next-line no-undef
             const token = jwt.sign(user.username, process.env.SECRET);
             // return the information including token as JSON
             res.status(200).json({success: true, token: 'BEARER ' + token});
