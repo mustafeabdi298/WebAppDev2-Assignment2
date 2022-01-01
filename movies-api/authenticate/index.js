@@ -23,3 +23,6 @@ const strategy = new JWTStrategy(jwtOptions, async (payload, next) => {
 passport.use(strategy);
 
 export default passport;
+
+
+
