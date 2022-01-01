@@ -22,6 +22,8 @@ export const movies = {
             "vote_average": 8.7,
             "vote_count": 3389
         },
+
+
         {
             "adult": false,
             "backdrop_path": "/hJuDvwzS0SPlsE6MNFOpznQltDZ.jpg",
