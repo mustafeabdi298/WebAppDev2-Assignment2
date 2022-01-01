@@ -20,6 +20,10 @@ const movies = [
         "vote_count": 111
     },
     {
+
+
+
+
         "adult": false,
         "backdrop_path": "/vam9VHLZl8tqNwkp1zjEAxIOrkk.jpg",
         "genre_ids": [
