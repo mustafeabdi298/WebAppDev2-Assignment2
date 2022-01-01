@@ -19,8 +19,6 @@ export const getUpcomingMovies = () => {
   }
   ).then(res=>res.json());
 };
-  
-
 
 
 export const getMovie = (args) => {
