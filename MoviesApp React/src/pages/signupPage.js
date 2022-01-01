@@ -18,6 +18,8 @@ const LoginPage = props => {
     }
   };
 
+
+
   // Set 'from' to path where browser is redirected after a successful login.
   // Either / or the protected path user tried to access.
   const { from } = props.location.state || { from: { pathname: "/" } };
