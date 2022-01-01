@@ -14,3 +14,5 @@ ReviewSchema.statics.findByMovieId = function (id) {
 };
 
 export default mongoose.model('Review', ReviewSchema);
+
+
