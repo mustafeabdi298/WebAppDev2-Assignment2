@@ -2,6 +2,7 @@ import fetch from 'node-fetch';
 
 export const getMovies = (page) => {
     return fetch(
+        // eslint-disable-next-line no-undef
         `https://api.themoviedb.org/3/discover/movie?api_key=${process.env.TMDB_KEY}&language=en-US&include_adult=false&include_video=false&page=${page}`
     ).then((response) => {
         if (!response.ok) {
@@ -14,8 +15,11 @@ export const getMovies = (page) => {
         });
 };
 
+
+
 export const getUpcomingMovies = (page) => {
     return fetch(
+        // eslint-disable-next-line no-undef
         `https://api.themoviedb.org/3/movie/upcoming?api_key=${process.env.TMDB_KEY}&language=en-US&page=${page}`
     ).then((response) => {
         if (!response.ok) {
@@ -30,6 +34,7 @@ export const getUpcomingMovies = (page) => {
 
 export const getMovie = (id) => {
     return fetch(
+      // eslint-disable-next-line no-undef
       `https://api.themoviedb.org/3/movie/${id}?api_key=${process.env.TMDB_KEY}`
     ).then((response) => {
       if (!response.ok) {
@@ -44,6 +49,7 @@ export const getMovie = (id) => {
 
 export const getMovieGenres = () => {
     return fetch(
+        // eslint-disable-next-line no-undef
         `https://api.themoviedb.org/3/genre/movie/list?api_key=${process.env.TMDB_KEY}&language=en-US`
     ).then((response) => {
         if (!response.ok) {
@@ -58,6 +64,7 @@ export const getMovieGenres = () => {
 
 export const getMovieImages = (id) => {
     return fetch(
+        // eslint-disable-next-line no-undef
         `https://api.themoviedb.org/3/movie/${id}/images?api_key=${process.env.TMDB_KEY}`
     ).then((response) => {
         if (!response.ok) {
@@ -72,6 +79,7 @@ export const getMovieImages = (id) => {
 
 export const getMovieReviews = (id) => {
     return fetch(
+        // eslint-disable-next-line no-undef
         `https://api.themoviedb.org/3/movie/${id}/reviews?api_key=${process.env.TMDB_KEY}`
     ).then((res) => res.json())
     .then((json) => {
@@ -81,6 +89,7 @@ export const getMovieReviews = (id) => {
 
 export const getCountries = () => {
     return fetch(
+        // eslint-disable-next-line no-undef
         `https://api.themoviedb.org/3/configuration/countries?api_key=${process.env.TMDB_KEY}`
     ).then((response) => {
         if (!response.ok) {
@@ -95,6 +104,7 @@ export const getCountries = () => {
 
 export const getLanguages = () => {
     return fetch(
+        // eslint-disable-next-line no-undef
         `https://api.themoviedb.org/3/configuration/languages?api_key=${process.env.TMDB_KEY}`
     ).then((response) => {
         if (!response.ok) {
@@ -110,6 +120,7 @@ export const getLanguages = () => {
 
 export const getShows = (page) => {
     return fetch(
+        // eslint-disable-next-line no-undef
         `https://api.themoviedb.org/3/tv/popular?api_key=${process.env.TMDB_KEY}&language=en-US&include_adult=false&include_video=false&page=${page}`
     ).then((response) => {
         if (!response.ok) {
@@ -122,8 +133,10 @@ export const getShows = (page) => {
         });
 };
 
+
 export const getShow = (id) => {
     return fetch(
+      // eslint-disable-next-line no-undef
       `https://api.themoviedb.org/3/tv/${id}?api_key=${process.env.TMDB_KEY}`
     ).then((response) => {
       if (!response.ok) {
@@ -138,6 +151,7 @@ export const getShow = (id) => {
 
 export const getShowGenres = () => {
     return fetch(
+        // eslint-disable-next-line no-undef
         `https://api.themoviedb.org/3/genre/tv/list?api_key=${process.env.TMDB_KEY}&language=en-US`
     ).then((response) => {
         if (!response.ok) {
@@ -152,6 +166,7 @@ export const getShowGenres = () => {
 
 export const getShowImages = (id) => {
     return fetch(
+        // eslint-disable-next-line no-undef
         `https://api.themoviedb.org/3/tv/${id}/images?api_key=${process.env.TMDB_KEY}`
     ).then((response) => {
         if (!response.ok) {
@@ -166,6 +181,7 @@ export const getShowImages = (id) => {
 
 export const getShowReviews = (id) => {
     return fetch(
+        // eslint-disable-next-line no-undef
         `https://api.themoviedb.org/3/tv/${id}/reviews?api_key=${process.env.TMDB_KEY}`
     ).then((res) => res.json())
     .then((json) => {
