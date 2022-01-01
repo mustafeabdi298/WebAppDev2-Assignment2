@@ -44,8 +44,10 @@ export async function loadMovies() {
   }
 }
 
+// eslint-disable-next-line no-undef
 if (process.env.SEED_DB) {
   loadUsers();
   loadGenres();
   loadMovies();
 }
+
