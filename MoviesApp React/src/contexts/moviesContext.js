@@ -23,6 +23,8 @@ const MoviesContextProvider = (props) => {
     const addToShowFavorites = (show) => {
       setShowFavorites([...showFavorites,show.id])
     };
+
+
     
     // We will use this function in a later section
     const removeFromShowFavorites = (show) => {
