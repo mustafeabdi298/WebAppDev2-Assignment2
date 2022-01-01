@@ -14,7 +14,6 @@ import fs from "fs";
 import path from "path";
 
 
-
 dotenv.config();
 
 const errHandler = (err, req, res) => {
