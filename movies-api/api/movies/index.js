@@ -17,6 +17,8 @@ router.get('/',  asyncHandler(async (req, res) => {
 }));
 
 
+
+
 router.get('/tmdb/upcoming', asyncHandler(async (req, res) => {
     let { page = 1} = req.query; // destructure page and limit and set default values
     page = +page; //trick to convert to numeric (req.query will contain string values)
